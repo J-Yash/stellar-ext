@@ -17,8 +17,8 @@ PyTorch implementation of STELLAR, a geometric deep learning tool for cell-type 
 We recommend using Conda package manager
 
 ```bash
-conda create -n stellar python=3.8
-source activate stellar
+conda create -n stellar-env python=3.10
+conda activate stellar-env
 ```
 
 **2. Pytorch:**
@@ -27,6 +27,7 @@ We have verified under PyTorch 1.9.1. For example:
 ```bash
 conda install pytorch cudatoolkit=11.3 -c pytorch
 ```
+**!!UPDATE**: Installed latest PyTorch version (2.4.1) on CUDA 12.5: `conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia`
 
 **3. Pytorch Geometric:**
 Install [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html), 
@@ -41,6 +42,12 @@ Please run the following command to install additional packages that are provide
 ```bash
 pip install -r requirements.txt
 ```
+**!!UPDATE**: Installing after removing original version numbers for packages--> 
+`pip install -r requirements_ext.txt`
+**!!UPDATE**: Additional packages needed:
+`conda install pytorch-scatter pytorch-sparse`
+
+
 
 **Note:** We tested STELLAR with NVIDIA GPU, Linux, Python3. In particular, on Ubuntu 16.04 with NVIDIA Geforce 2080 Ti GPU and 1T CPU memory. We additionally tested the code on macOS (Intel chip).
 

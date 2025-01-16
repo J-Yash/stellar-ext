@@ -1,1 +1,7 @@
 .DS_Store
+# Ignore data directory
+data/
+# Ignore __pycache__ directory
+__pycache__/
+experiments/
+images/
