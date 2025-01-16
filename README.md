@@ -42,8 +42,6 @@ Please run the following command to install additional packages that are provide
 ```bash
 pip install -r requirements.txt
 ```
-**!!UPDATE**: Installing after removing original version numbers for packages--> 
-`pip install -r requirements_ext.txt`
 **!!UPDATE**: Additional packages needed:
 `conda install pytorch-scatter pytorch-sparse`
 
